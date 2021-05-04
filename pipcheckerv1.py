@@ -67,9 +67,9 @@ class WM_OT_PipChecker(Operator):
 
         return {'FINISHED'}
 
-class OBJECT_PT_PIP(Panel):
+class OBJECT_PT_PIPC(Panel):
         bl_label = "PipCheck"
-        bl_idname = "OBJECT_PT_pip_check"
+        bl_idname = "OBJECT_PT_pip_checkc"
         bl_space_type = "VIEW_3D"
         bl_region_type = "UI"
         bl_category = "PipChecker"
@@ -101,7 +101,7 @@ class OBJECT_PT_PIP(Panel):
           layout.operator("wm.pip_check")
           layout.separator()
 
-classes = (MyProperties, OBJECT_PT_PIP, WM_OT_PipChecker)
+classes = (MyProperties, OBJECT_PT_PIPC, WM_OT_PipChecker)
 
 def register():
       from bpy.utils import register_class
